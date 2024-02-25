@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard - Ventike</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- <script>
+            async function update() {
+                // console.log(await (await fetch("https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/latest.json/", { mode: 'cors', headers:{ 'Access-Control-Allow-Origin':'*' }})).json());
+                // let downloads = JSON.parse(await (await fetch(url)).json());
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', "https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/latest.json/", true);
+                xhr.responseType = 'json';
+                xhr.withCredentials = true;
+                xhr.onload = function() {
+                    console.log(xhr.response);
+                };
+                xhr.send();
+            }
+            update();
+        </script> -->
+    </head>
+    <body>
+        <div id="page">
+            <div id="navbar">
+                <a href="./index.html"><img src="./assets/logoandtext.png"></a>
+                <div id="items">
+                    <a href="./download.html" class="item"><span>Download</span></a>
+                </div>
+            </div>
+            <div id="page-content">
+                <div id="centered-page">
+                    <h1>Download</h1>
+                    <h3>Select the app for your platform</h3>
+                    <div id="page-left">
+                        <a href="https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/test_0.1.16_x64_en-US.msi" download>Windows</a>
+                        <a href="https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/test_0.1.16_x64.dmg" download>Mac OS</a>
+                        
+                    </div>
+                    <div id="page-right">
+                        <a href="https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/test_0.1.16_amd64.deb" download>Linux (DEB)</a>
+                        <a href="https://github.com/Seyon-Satheesh/tauri-svelte-test/releases/latest/download/test_0.1.16_amd64.AppImage" download>Linux (AppImage)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
